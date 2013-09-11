@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>RabotaZaDen</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        
+        <link href="style/reset.css" rel="stylesheet">
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="bootstrap/css/social-buttons.css" rel="stylesheet">
+        <link href="style/layout.css" rel="stylesheet">
+        <link href="style/main_elements.css" rel="stylesheet">
+        <link href="style/custom.css" rel="stylesheet">
+        
+        
+            
+    <!--[if lt IE 9]>
+        <script src="asset/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="asset/favicon/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="asset/favicon/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="asset/favicon/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="asset/favicon/apple-touch-icon-57-precomposed.png">
+        <link rel="shortcut icon" href="asset/favicon/favicon.png">
+    </head>
+
+    <body>
+  
+      <div class="wrapper clearfix">
+  
+        <header class="clearfix">
+          <a href="index.html" class="logo_small pull-left"></a>
+          
+          <div class="header_buttons pull-left">
+            <div class="btn-group">
+              <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
+                Възложител
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                  <li><a href="create_ad_contractor.html">Публикувай обява</a></li>
+                  <li><a href="search_contractor_actor.html">Търси изпълнител</a></li>
+                  <li><a href="search_contractor_ads.html">Търси реклама</a></li>
+                  <li><a href="help_contractor.html">Как става?</a></li>
+              </ul>
+            </div>
+            <div class="btn-group">
+              <a class="btn btn-warning dropdown-toggle" data-toggle="dropdown" href="#">
+                Изпълнител
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                  <li><a href="">Стани изпълнител</a></li>
+                  <li><a href="search_actor.html">Търси обява</a></li>
+                  <li><a href="create_ad_actor.html">Направи си реклама</a></li>
+                  <li><a href="help_actor.html">Как става?</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="profile_nav pull-right">
+            <div class="pull-left">
+                <input class="input-block-level" type="text" placeholder="И-мейл"/>
+                <label class="checkbox">
+                    <input type="checkbox" value="remember-me"/>
+                    Запомни ме
+                </label> 
+            </div>
+            <div class="pull-left">
+                <input class="input-block-level" type="text" placeholder="Парола"/>
+                <br/>
+                <a href="">Забравена парола?</a>
+            </div>
+            <div class="pull-left">
+                <button class="btn btn-primary pull-left" type="submit">Вход</button>
+                <button class="btn btn-facebook pull-left"><i class="icon-facebook"></i></button>
+                <br/>
+                <a href="">Регистрация</a>
+            </div>
+          </div>
+        </header>
+        
+		<!--Popup-->
+		
+<!-- BlockUser -->
+			<div id="blockUser" class="modal hide fade"  tabindex="-1" data-width="300">
+			  <h3 id="center-title">Блокиране на потребител</h3>
+			<p  id="center-cont">Блокиран потребител не може да ви изпраща известия за обяви</p>
+			
+			<input type="button" class="btn btn-warning dropdown-toggle pull-left" id="btn-position-left" value="Блокирай" />
+			<input type="button" class="btn pull-right"  id="close" value="Отмени" />
+			</div>
+<!-- Delete Profile -->
+			<div id="deleteProfile" class="modal hide fade" tabindex="-1" data-width="300">
+			  
+			<h3 id="center-title">Изтриване на профил</h3>
+			<p  id="center-cont">Сигурни ли сте, че искате да изтриете профила си. Това ще заличи цялата информация от него безвъзвратно</p>
+			
+			<input type="text" id="center-field" placeholder="Въведете парола ..."/>
+			<br/>
+			<input type="button" class="btn btn-warning dropdown-toggle" id="btn-pos" value="Изтрий" />
+			<div id="right-btn-pos"><input type="button" class="btn"  id="close"  value="Отмени" /></div>
+		 
+			</div>
+<!-- Forgot Pass -->
+			<div id="forgotPassword" class="modal hide fade" tabindex="-1" data-width="300">
+			  
+			<h3 id="center-title">Забравена парола</h3>
+			<p  id="center-cont">Въведете e-mail и ще ти изпратим информация относно възстановяване на достъп до акаунта ти.</p>
+			
+			<input type="text" id="center-field" placeholder="Имейл ..."/>
+			<br/>
+			<input type="button" class="btn btn-warning dropdown-toggle" id="btn-pos" value="Възтанови" />
+			<div id="right-btn-pos"><input type="button" class="btn"  id="close" value="Отмени" /></div>
+			
+			</div>
+<!-- InviteFriend -->
+			<div id="inviteFriend" class="modal hide fade"  tabindex="-1" data-width="300">
+			  
+			<h3 id="center-title">Покани приятели</h3>
+<form>
+
+<div class="control-group">
+	<div class="controls">
+			<dir  id="chechlistFriends">
+				<ul>
+				<li>
+					<img src="facebook.png" alt="FB"  id="imageFriend" width="45" height="30">
+					<label class="checkbox" >
+					<input type="checkbox" name="checkboxes"  value="Option one">Иван Иванов</label>
+				</li>
+				<li>
+					<img src="facebook.png" alt="FB"  id="imageFriend" width="45" height="30">
+					<label class="checkbox" >
+					<input type="checkbox" name="checkboxes"  value="Option one">Иван Иванов</label>
+				</li>
+				<li>
+					<img src="facebook.png" alt="FB"  id="imageFriend" width="45" height="30">
+					<label class="checkbox" >
+					<input type="checkbox" name="checkboxes"  value="Option one">Иван Иванов</label>
+				</li>
+				<li>
+					<img src="facebook.png" alt="FB"  id="imageFriend" width="45" height="30">
+					<label class="checkbox" >
+					<input type="checkbox" name="checkboxes"  value="Option one">Иван Иванов</label>
+				</li>
+				<li>
+					<img src="facebook.png" alt="FB"  id="imageFriend" width="45" height="30">
+					<label class="checkbox" >
+					<input type="checkbox" name="checkboxes"  value="Option one">Иван Иванов</label>
+				</li>
+				</ul>
+			</dir>
+	</div>
+</div>
+
+</form>
+			
+					<br/>
+			<input type="button" class="btn btn-warning dropdown-toggle" id="btn-position-left" value="Блокирай" />
+			<input type="button" class="btn"  id="close" value="Отмени" />
+		 
+			</div>
+			
+<!-- Become VIP -->
+			<div id="becomeVIP" class="modal hide fade" tabindex="-1" data-width="300">
+			  
+				<h3 id="center-title">Направи ВИП</h3>
+				<p  id="center-cont">Изпрати кратко съобщение с текст rabotlivko A03292SL на номер 4444 и въведете кода, който получите в полето по-долу</p>
+				
+				<input type="text" id="center-field-SMS" placeholder="SMS код"/>
+				<br/>
+				<input type="button" class="btn btn-warning dropdown-toggle" id="btn-pos" value="Готово" />
+				<div id="right-btn-pos"><input type="button" class="btn"  id="close" value="Отмени" /></div>
+			
+			</div>
+<!-- Register Ad -->
+			<div id="registerAd" class="modal hide fade" tabindex="-1" data-width="300">
+			<p id="center-title2">Регистрай се и запази обявата в чернова</p>
+			<div class="control-group">
+								    <div class="controls span2">
+								        <label class="checkbox" id="regCheckBox2">
+								            <input type="checkbox" name="term" value="option1" > Вече съм регистриран
+								        </label>
+								    </div>
+				</div>
+			  	<input type="text" id="regFieldName" placeholder="Имейл"/>
+				<br/>
+				<input type="password" id="regFieldPass" placeholder="Парола"/>
+				<br/>
+				<input type="password" id="regFieldRpass" placeholder="Повтори парола"/>
+				<br/>
+			
+				<div class="control-group">
+								    <div class="controls span2">
+								        <label class="checkbox" id="regCheckBox">
+								            <input type="checkbox" name="term" value="option1" > Потвърждавам че съм способен да изпълнявам предложените от мен услуги според описаното в условията за ползванe
+								        </label>
+								    </div>
+				</div>
+				
+				<select id="regSelect">
+				  <option value="select" selected="selected">От къде научи за нас</option>
+				  <option value="fb">Facebook</option>
+				  <option value="twitter">Twitter</option>
+				  <option value="myspace">MySpace</option>
+				  <option value="other">Other</option>
+				</select>
+				<br/>
+				<input type="button" class="btn btn-warning dropdown-toggle" id="btn-pos-bot" value="Регистрирай" />
+				<input type="button" class="btn"  id="right-btn-pos-bot" value="Отмени" />
+				<a><img src="facebook.png" alt="FB"  id="fbBtn" width="45" height="30"></a>
+			
+			</div>
+<!-- Register -->
+			<div id="register" class="modal hide fade" tabindex="-1" data-width="300">
+			<h3 id="center-title">Регистрация</h3>
+			  	<input type="text" id="regFieldMail" placeholder="Имейл"/>
+				<br/>
+				<input type="text" id="regFieldName" placeholder="Име (Иван Иванов)"/>
+				<br/>
+				<input type="password" id="regFieldPass" placeholder="Парола"/>
+				<br/>
+				<input type="password" id="regFieldRpass" placeholder="Повтори парола"/>
+				<br/>
+			
+				<div class="control-group">
+								    
+								    <div class="controls span2">
+								        <label class="checkbox" id="regCheckBox">
+								            <input type="checkbox" name="term" value="option1" > Потвърждавам че съм способен да изпълнявам предложените от мен услуги според описаното в условията за ползванe
+								        </label>
+								    </div>
+				</div>
+				
+				<select id="regSelect">
+				  <option value="select" selected="selected">От къде научи за нас</option>
+				  <option value="fb">Facebook</option>
+				  <option value="twitter">Twitter</option>
+				  <option value="myspace">MySpace</option>
+				  <option value="other">Other</option>
+				</select>
+				<br/>
+				<input type="button" class="btn btn-warning dropdown-toggle" id="btn-pos-bot" value="Регистрирай" />
+				<input type="button" class="btn"  id="right-btn-pos-bot" value="Отмени" />
+				<a><img src="facebook.png" alt="FB"  id="fbBtn" width="45" height="30"></a>
+			
+			</div>
+<!-- Report -->
+			<div id="report" class="modal hide fade" tabindex="-1" data-width="300">
+			  
+				<h3 id="center-title">Докладвай нередност</h3>
+				<p  id="center-cont">Моля обяснете какъв е проблемът с обявата</p>
+				
+				<textarea placeholder="Проблема е ..." id="textAreaSize"></textarea>
+				<br/>
+				<input type="button" class="btn btn-warning dropdown-toggle" id="btn-pos" value="Докладвай" />
+				<div id="right-btn-pos"><input type="button" class="btn"  id="close" value="Отмени" /></div>
+			
+			</div>
+<!-- Terms -->
+			<div id="terms" class="modal hide fade" tabindex="-1" data-width="300">
+			  
+				<h3 id="center-title">Условия за ползване</h3>
+				<p  id="left-cont">Copyright ERICO, Inc. ("ERICO") 1998-2003. All Rights Reserved. Copyright in this document is owned by ERICO.
+
+					Any person is hereby authorized to view, copy, print and distribute this document subject to the following conditions: (i) the document may only be used for non-			commercial purposes and (ii) any copy of this document or portion thereof must include this copyright notice.
+
+					Note that any product, process or technology described in the document may be the subject of other intellectual property rights reserved by ERICO and are not licensed hereunder.</p>
+				<p id="left-cont">Trademarks
+				
+				CADDY, CADDY MAN, CADWELD, CRITEC, ERICO, ERIFLEX, ERITECH, FLEXIBAR, LENTON and/or other ERICO products referenced herein are either registered 	trademarks or trademarks of ERICO International Corporation in the U.S. and/or other countries. The names of actual companies and products mentioned herein may be the trademarks of their respective owners.</p>
+				
+				
+				<input type="button" class="btn" id="btn-position-left" value="Готово" />
+				
+			
+			</div>
+<!-- Whats New -->
+			<div id="whatsNew" class="modal hide fade" tabindex="-1" data-width="300">
+			  
+				<h3 id="center-title">Какво ново</h3>
+				<div class="container">         
+				  <div class="row">
+				    <div class="span2"> 
+				      <img src="mickey.png" alt="mickey" id="contImage" width="300" height="300">
+				    </div>
+				    <div class="span6">
+				     <p  id="left-cont">Copyright ERICO, Inc. ("ERICO") 1998-2003. All Rights Reserved. Copyright in this document is owned by ERICO.
+
+Any person is hereby authorized to view, copy, print and distribute this document subject to the following conditions: (i) the document may only be used for non-commercial purposes and (ii) any copy of this document or portion thereof must include this copyright notice.
+
+Note that any product, process or technology described in the document may be the subject of other intellectual property rights reserved by ERICO and are not licensed hereunder.</p>
+				    </div>
+				     <div class="span6">
+				     <p  id="left-cont">Copyright ERICO, Inc. ("ERICO") 1998-2003. All Rights Reserved. Copyright in this document is owned by ERICO.
+
+Any person is hereby authorized to view, copy, print and distribute this document subject to the following conditions: (i) the document may only be used for non-commercial purposes and (ii) any copy of this document or portion thereof must include this copyright notice.
+
+Note that any product, process or technology described in the document may be the subject of other intellectual property rights reserved by ERICO and are not licensed hereunder.</p>
+				    </div>
+				       <div class="span2"> 
+				      <img src="mickey.png" alt="mickey" width="300" height="300">
+				    </div>
+				  </div>		
+				  </div>
+
+				<input type="button" class="btn" id="btn-position-left" value="Готово" />
+				
+			
+			</div>
+
+			<!-- Buttons -->
+			<button class="btn btn-info" data-toggle="modal" href="#blockUser">Block User</button><br />
+			<button class="btn btn-info" data-toggle="modal" href="#deleteProfile">Delete Profile</button><br />
+			<button class="btn btn-info" data-toggle="modal" href="#forgotPassword">Forgot Password</button><br />
+			<button class="btn btn-info" data-toggle="modal" href="#inviteFriend">Invite Friend</button><br />
+			<button class="btn btn-info" data-toggle="modal" href="#becomeVIP">Become VIP</button><br />
+			<button class="btn btn-info" data-toggle="modal" href="#registerAd">Register in Ad</button><br />
+			<button class="btn btn-info" data-toggle="modal" href="#register">Register</button><br />
+			<button class="btn btn-info" data-toggle="modal" href="#report">Report Ad</button><br />
+			<button class="btn btn-info" data-toggle="modal" href="#terms">Terms</button><br />
+			<button class="btn btn-info" data-toggle="modal" href="#whatsNew">Whats new</button><br />
+			
+			
+        <footer>
+          <ul class="navigation">
+            <li class="active"><a href="about.html">За RabotaZaDen</a></li>
+            <li><a href="faq.html">Често Задвани Въпроси</a></li>
+            <li><a href="terms.html">Потребителско Споразумение</a></li>
+            <li><a href="ad.html">Рекламирай в RabotaZaDen</a></li>
+            <li><a href="contact.html">Контакт</a></li>
+          </ul>
+        </footer>
+  
+      </div>
+      	
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>
+

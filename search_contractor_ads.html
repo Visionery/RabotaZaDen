@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta charset="utf-8"/>
+        <title>RabotaZaDen</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content=""/>
+        <meta name="author" content=""/>
+        
+        <link href="style/reset.css" rel="stylesheet"/>
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet"/>
+        <link href="bootstrap/css/social-buttons.css" rel="stylesheet"/>
+        <link href="style/layout.css" rel="stylesheet"/>
+        <link href="style/main_elements.css" rel="stylesheet"/>
+        <link href="style/custom.css" rel="stylesheet"/>
+            
+    <!--[if lt IE 9]>
+        <script src="asset/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="asset/favicon/apple-touch-icon-144-precomposed.png"/>
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="asset/favicon/apple-touch-icon-114-precomposed.png"/>
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="asset/favicon/apple-touch-icon-72-precomposed.png"/>
+        <link rel="apple-touch-icon-precomposed" href="asset/favicon/apple-touch-icon-57-precomposed.png"/>
+        <link rel="shortcut icon" href="asset/favicon/favicon.png"/>
+    </head>
+
+    <body>
+  
+      <div class="wrapper clearfix">
+  
+        <header class="clearfix">
+          <a href="index.html" class="logo_small pull-left"></a>
+          
+          <div class="header_buttons pull-left">
+            <div class="btn-group">
+              <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
+                Възложител
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                  <li><a href="create_ad_contractor.html">Публикувай обява</a></li>
+                  <li><a href="search_contractor_actor.html">Търси изпълнител</a></li>
+                  <li><a href="search_contractor_ads.html">Търси реклама</a></li>
+                  <li><a href="help_contractor.html">Как става?</a></li>
+              </ul>
+            </div>
+            <div class="btn-group">
+              <a class="btn btn-warning dropdown-toggle" data-toggle="dropdown" href="#">
+                Изпълнител
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                  <li><a href="">Стани изпълнител</a></li>
+                  <li><a href="search_actor.html">Търси обява</a></li>
+                  <li><a href="create_ad_actor.html">Направи си реклама</a></li>
+                  <li><a href="help_actor.html">Как става?</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="profile_nav pull-right">
+            <div class="pull-left">
+                <input class="input-block-level" type="text" placeholder="И-мейл"/>
+                <label class="checkbox">
+                    <input type="checkbox" value="remember-me"/>
+                    Запомни ме
+                </label> 
+            </div>
+            <div class="pull-left">
+                <input class="input-block-level" type="text" placeholder="Парола"/>
+                <br/>
+                <a href="">Забравена парола?</a>
+            </div>
+            <div class="pull-left">
+                <button class="btn btn-primary pull-left" type="submit">Вход</button>
+                <button class="btn btn-facebook pull-left"><i class="icon-facebook"></i></button>
+                <br/>
+                <a href="">Регистрация</a>
+            </div>
+          </div>
+        </header>
+  
+        <div class="two_c_big clearfix">
+            <form class="form-search">
+              <input type="text" class="input-medium search-query" placeholder="Какво търсиш...">
+              <button type="submit" class="btn">Search</button>
+            </form>
+            
+            <div class="three_c_sm_left search_filter">
+                <h4>Цена</h4>
+                
+                <h4>Рейтинг</h4>
+                
+                <input class="input-block-level" type="text" placeholder="Къде"/>
+                
+                <input class="input-block-level" type="text" placeholder="Кога"/>
+                
+                <h4>Категории</h4>
+                <a href="">Журналист</a>
+                <a href="">Козметика и красота</a>
+                <a href="">Масажи и кинезитер.</a>
+                <a href="">Спорт</a>
+                <a href="">Домакинска работа</a>
+                <a href="">Монтажи и инсталации</a>
+                <a href="">Ремонт и строителство</a>
+                <a href="">Транспорт и хамалски</a>
+                <a href="">Пазарувам/Готвя</a>
+                <a href="">Административни усл.</a>
+                <a href="">Екскурзии и разходки</a>
+                <a href="">Промотиране</a>
+                <a href="">Гледам деца</a>
+                <a href="">Гледам дом. любимци</a>
+                <a href="">Гледам възрастни</a>
+                <a href="">Образование</a>
+                <a href="">Преводи</a>
+                <a href="">Градина</a>
+                <a href="">Авто услуги</a>
+                <a href="">Сигуност и охрана</a>
+                <a href="">Квалиф. консултации</a>
+                <a href="">Творчество</a>
+                <a href="">Дизайн</a>
+                <a href="">WEB/ IT</a>
+                <a href="">Събития/Персонал</a>
+                <a href="">Партита/Сватби/Музика</a>
+                <a href="">Доставям навреме</a>
+                <a href="">Други</a>
+
+            </div>
+            
+            <div class="three_c_big_nopadding">
+                
+                <ul class="nav nav-tabs">
+                    <li><a href="search_contractor_actor.html">Изпълнители</a></li>
+                    <li class="active"><a href="search_contractor_ads.html">Реклами</a></li>
+                </ul>
+                <div class="white_background">
+                    <div class="search_result_order clearfix">Подреди по <a href="">рейтинг</a> | <a href="">цена</a> | <a href="">дата</a></div>
+                    
+                    <ul class="media-list">
+                        <li class="media">
+                          <a class="pull-left" href="#">
+                            <img class="media-object" src="asset/image/search_blank.png">
+                          </a>
+                          <div class="media-body">
+                            <div class="pull-right">Маркчо Зукербъргчов<div class="rating"></div></div>
+                            <h5 class="media-heading">Loooong loooooong looooong looooong Media heading</h5>
+                            <p>Sed eros neque, posuere quis eleifend vel, laoreet in ipsum. Cras non venenatis velit, sit amet pulvinar dolor. Curabitur quis nunc lacus. Morbi vel scelerisque nisl. Morbi posuere ultricies nisl, sit amet pellentesque ligula adipiscing eget. Maecenas gravida augue at felis pharetra tempus. Pellentesque condimentum auctor nulla id euismod.</p>
+                            <span class="date">13.03.2013</span>, <span class="place">София</span>
+                            <span class="price pull-right">12лв.</span>
+                          </div>
+                        </li>
+                        <li class="media">
+                          <a class="pull-left" href="#">
+                            <img class="media-object" src="asset/image/search_blank.png">
+                          </a>
+                          <div class="media-body">
+                            <div class="pull-right">Стоян Иванов<div class="rating"></div></div>
+                            <h5 class="media-heading">Media heading</h5>
+                            <p>Sed eros neque, posuere quis eleifend vel, laoreet in ipsum. Cras non venenatis velit, sit amet pulvinar dolor. Curabitur quis nunc lacus. Morbi vel scelerisque nisl. Morbi posuere ultricies nisl, sit amet pellentesque ligula adipiscing eget. Maecenas gravida augue at felis pharetra tempus. Pellentesque condimentum auctor nulla id euismod.</p>
+                            <span class="date">13.03.2013</span>, <span class="place">София</span>
+                            <span class="price pull-right">12лв.</span>
+                          </div>
+                        </li>
+                        <li class="media">
+                          <a class="pull-left" href="#">
+                            <img class="media-object" src="asset/image/search_blank.png">
+                          </a>
+                          <div class="media-body">
+                            <div class="pull-right">Стоян Иванов<div class="rating"></div></div>
+                            <h5 class="media-heading">Media heading</h5>
+                            <p>Pellentesque condimentum auctor nulla id euismod.</p>
+                            <span class="date">13.03.2013</span>, <span class="place">София</span>
+                            <span class="price pull-right">12лв.</span>
+                          </div>
+                        </li>                    
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="two_c_sm banner">
+            Банер
+        </div>
+  
+        <footer>
+          <ul class="navigation">
+            <li class="active"><a href="about.html">За RabotaZaDen</a></li>
+            <li><a href="faq.html">Често Задвани Въпроси</a></li>
+            <li><a href="terms.html">Потребителско Споразумение</a></li>
+            <li><a href="ad.html">Рекламирай в RabotaZaDen</a></li>
+            <li><a href="contact.html">Контакт</a></li>
+          </ul>
+        </footer>
+  
+      </div>
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>
