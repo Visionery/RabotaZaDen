@@ -16,6 +16,8 @@
         <link href="style/layout.css" rel="stylesheet">
         <link href="style/main_elements.css" rel="stylesheet">
         <link href="style/custom.css" rel="stylesheet">
+        <link href="style/datepicker.css" rel="stylesheet">
+        <link href="style/slider.css" rel="stylesheet">
             
     <!--[if lt IE 9]>
         <script src="asset/html5shiv.js"></script>
@@ -86,18 +88,20 @@
   
         <div class="two_c_big clearfix">
             <form class="form-search">
-              <input type="text" class="input-medium search-query" id="search_field" placeholder="Какво търсиш...">
-              <button type="submit" class="btn" id="search_button">Search</button>
+              <span><input type="text" class="input-medium search-query" id="search_field" placeholder="Какво търсиш..."/><span>
+              <span><button type="submit" class="btn search_button">Search</button></span>
             </form>
             
             <div class="three_c_sm_left search_filter">
-                <h4>Цена</h4>
-                
-                <h4>Рейтинг</h4>
+            	
+                <h4>Цена</h4><br /><br />
+				<input type="text" class="slider" style="width: 145px;" />
+                <h4>Рейтинг</h4><br /><br />
+                <input type="text" class="slider2" style="width: 145px;" />
                 
                 <input class="input-block-level" type="text" placeholder="Къде"/>
                 
-                <input class="input-block-level" type="text" placeholder="Кога"/>
+                <input class="input-block-level when-input-box" type="text" placeholder="Кога"/>
                 
                 <h4>Категории</h4>
                 <a href="">Журналист</a>
@@ -192,5 +196,48 @@
       </div>
         <script src="http://code.jquery.com/jquery.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="bootstrap/js/bootstrap-slider.js"></script>
+        <script src="bootstrap/js/bootstrap-datepicker.js"></script>
+        <script type="text/javascript">
+        	$('.slider').slider({
+                min: 1,
+                max: 1000,
+                step: 10,
+                value: [400,600],
+                  formater: function(value) {
+            return value+' лв.';
+          }
+            });
+            
+			$('.slider2').slider({
+                min: 1,
+                max: 5,
+                step: 1,
+                value: [2,5],
+                	formater: function(value) {
+                		if (value == 1) {
+	                		return "very sad";
+                		}
+                		else if (value == 2) {
+	                		return "sad";
+                		}
+                		else if (value == 3) {
+	                		return "neutral";
+                		}
+                		else if (value == 4) {
+	                		return "happy";
+                		}
+                		else if (value == 5) {
+	                		return "very happy";
+                		}
+                		
+						
+          }
+            });
+            $('.tooltip').addClass('in');
+            $('.tooool').tooltip();
+
+        	$(".when-input-box").datepicker();
+        </script>
     </body>
 </html>
