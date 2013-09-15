@@ -40,9 +40,10 @@ textarea {
 }
 
 .logo_small {
-    background: url("../asset/image/logo_sm.png") no-repeat scroll 0 0 transparent;
-    width: 200px;
-    height: 45px;
+    background: url("../asset/image/logo-web.png") no-repeat scroll 0 0 transparent;
+    width: 171px;
+    height: 74px;
+    margin-right: 70px;
 }
 .logo_big {
     background: url("../asset/image/logo_big.png") no-repeat scroll 0 0 transparent;
@@ -53,6 +54,7 @@ textarea {
 
 .profile_nav {
     font-size: 12px;
+    margin-top: 42px;
 }
 .profile_nav label {
     font-size: 12px;
@@ -126,11 +128,11 @@ footer .navigation {
 }
 footer .navigation li {
     float: left;
-    margin-left: 40px; 
+    margin-left: 55px; 
 }
 footer .navigation li:first-child {
     float: left;
-    margin-left: 0; 
+    margin-left: 20px; 
 }
 footer .navigation li.active {
     

@@ -40,8 +40,8 @@
           
           <div class="header_buttons pull-left">
             <div class="btn-group">
-              <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
-                Възложител
+              <a class="btn btn-link" data-toggle="dropdown" href="#">
+                <span class="button-vuzlojitel btn-bigger-header">Възложи задача</span>
                 <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
@@ -52,8 +52,8 @@
               </ul>
             </div>
             <div class="btn-group">
-              <a class="btn btn-warning dropdown-toggle" data-toggle="dropdown" href="#">
-                Изпълнител
+              <a class="btn btn-link" data-toggle="dropdown" href="#">
+                <span class="button-izpulnitel btn-bigger-header">Изпълни задача</span>
                 <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
@@ -66,28 +66,24 @@
           </div>
           <div class="profile_nav pull-right">
             <div class="pull-left">
-                <input class="input-block-level" type="text" placeholder="И-мейл"/>
-                <label class="checkbox">
-                    <input type="checkbox" value="remember-me"/>
-                    Запомни ме
-                </label> 
-            </div>
-            <div class="pull-left">
-                <input class="input-block-level" type="text" placeholder="Парола"/>
-                <br/>
-                <a href="">Забравена парола?</a>
-            </div>
-            <div class="pull-left">
-                <button class="btn btn-primary pull-left" type="submit">Вход</button>
-                <button class="btn btn-facebook pull-left"><i class="icon-facebook"></i></button>
-                <br/>
-                <a href="">Регистрация</a>
+            	<button class="btn btn-link btn-bigger-header"><a data-toggle="modal" href="#login">Вход</a></button>
+                <button class="btn btn-link btn-bigger-header"><a data-toggle="modal" href="#register">Регистрирай се</a></button>
+                <button class="btn btn-link"><img src="https://cdn1.iconfinder.com/data/icons/WPZOOM_Social_Networking_Icon_Set/24/facebook.png" alt=""></button>
             </div>
           </div>
         </header>
         
 		<!--Popup-->
-		
+		<!-- LOGIN -->
+			<div id="login" class="modal hide fade"  tabindex="-1" data-width="300">
+			  <h3 id="center-title-login">Вход</h3>
+						
+				<input type="text" id="LogInemail" style="width:140px;" placeholder="Имейл"/>
+				<input type="password" id="LogInpass" style="width:140px;" placeholder="Парола"/>
+				<br/>
+				<input type="button" class="btn-warning pull-left"  id="loginBtn" value="Влезни" />
+			</div>
+
 <!-- BlockUser -->
 			<div id="blockUser" class="modal hide fade"  tabindex="-1" data-width="300">
 			  <h3 id="center-title">Блокиране на потребител</h3>
@@ -317,15 +313,16 @@ Note that any product, process or technology described in the document may be th
 			</div>
 
 			<!-- Buttons -->
-			<button class="btn btn-info" data-toggle="modal" href="#blockUser">Block User</button><br />
+			<button class="btn btn-warning" data-toggle="modal" href="#login">Login </button><br />
+			<button class="btn btn-info" data-toggle="modal" href="#blockUser">Block User </button><br />
 			<button class="btn btn-info" data-toggle="modal" href="#deleteProfile">Delete Profile</button><br />
-			<button class="btn btn-info" data-toggle="modal" href="#forgotPassword">Forgot Password</button><br />
-			<button class="btn btn-info" data-toggle="modal" href="#inviteFriend">Invite Friend</button><br />
+			<button class="btn btn-warning" data-toggle="modal" href="#forgotPassword">Forgot Password</button><br />
+			<button class="btn btn-warning" data-toggle="modal" href="#inviteFriend">Invite Friend</button><br />
 			<button class="btn btn-info" data-toggle="modal" href="#becomeVIP">Become VIP</button><br />
 			<button class="btn btn-info" data-toggle="modal" href="#registerAd">Register in Ad</button><br />
-			<button class="btn btn-info" data-toggle="modal" href="#register">Register</button><br />
+			<button class="btn btn-warning" data-toggle="modal" href="#register">Register</button><br />
 			<button class="btn btn-info" data-toggle="modal" href="#report">Report Ad</button><br />
-			<button class="btn btn-info" data-toggle="modal" href="#terms">Terms</button><br />
+			<button class="btn btn-warning" data-toggle="modal" href="#terms">Terms</button><br />
 			<button class="btn btn-info" data-toggle="modal" href="#whatsNew">Whats new</button><br />
 			
 			

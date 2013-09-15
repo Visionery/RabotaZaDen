@@ -38,8 +38,8 @@
           
           <div class="header_buttons pull-left">
             <div class="btn-group">
-              <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
-                Възложител
+              <a class="btn btn-link" data-toggle="dropdown" href="#">
+                <span class="button-vuzlojitel btn-bigger-header">Възложи задача</span>
                 <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
@@ -50,8 +50,8 @@
               </ul>
             </div>
             <div class="btn-group">
-              <a class="btn btn-warning dropdown-toggle" data-toggle="dropdown" href="#">
-                Изпълнител
+              <a class="btn btn-link" data-toggle="dropdown" href="#">
+                <span class="button-izpulnitel btn-bigger-header">Изпълни задача</span>
                 <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
@@ -64,42 +64,304 @@
           </div>
           <div class="profile_nav pull-right">
             <div class="pull-left">
-                <input class="input-block-level" type="text" placeholder="И-мейл"/>
-                <label class="checkbox">
-                    <input type="checkbox" value="remember-me"/>
-                    Запомни ме
-                </label> 
-            </div>
-            <div class="pull-left">
-                <input class="input-block-level" type="text" placeholder="Парола"/>
-                <br/>
-                <a href="">Забравена парола?</a>
-            </div>
-            <div class="pull-left">
-                <button class="btn btn-primary pull-left" type="submit">Вход</button>
-                <button class="btn btn-facebook pull-left"><i class="icon-facebook"></i></button>
-                <br/>
-                <a href="registration.html">Регистрация</a>
+            	<button class="btn btn-link btn-bigger-header"><a data-toggle="modal" href="#login">Вход</a></button>
+                <button class="btn btn-link btn-bigger-header"><a data-toggle="modal" href="#register">Регистрирай се</a></button>
+                <button class="btn btn-link"><img src="https://cdn1.iconfinder.com/data/icons/WPZOOM_Social_Networking_Icon_Set/24/facebook.png" alt=""></button>
             </div>
           </div>
         </header>
   
-        <div class="one_column">
-
-        </div>
   
+  <!-- Carousel -->
+   <!-- Nav -->
+   <div class="carousel_box container">
+		<ol class="carousel-linked-nav pagination">
+		  <li class="active left"><a href="#1" >
+		  		<img src="asset/image/carousel/businesswoman.png" style="width:100px; height:120px;" alt=""/></a>
+		  		<div class="bottom-line-separate-left"></div>
+		  </li>
+		  <li class="left"><a href="#2">
+		  	
+		  	<img src="asset/image/carousel/businessman.png" style="width:100px; height:120px;" alt=""/></a>
+		  	<div class="bottom-line-separate-left"></div>
+		  </li>
+		  <li class="left"><a href="#3">
+		  	
+		  	<img src="asset/image/carousel/businesswoman2.png" style="width:100px; height:120px;" alt=""/></a>
+		  	<div class="bottom-line-separate-left"></div>
+		  </li>
+		  <li class="right-1"><a href="#4" >
+		  	
+		  	<img src="asset/image/carousel/businessman2.png" style="width:100px; height:120px;" alt=""/></a>
+		  	<div class="bottom-line-separate-right"></div>
+		  </li>
+		  <li class="right-2"><a href="#5" >
+		  	
+		  	<img src="asset/image/carousel/woman.png" style="width:100px; height:120px;" alt=""/></a>
+		  	<div class="bottom-line-separate-right"></div>
+		  </li>
+		  <li class="right-3"><a href="#6" >
+		  	
+		  	<img src="asset/image/carousel/man.png" style="width:100px; height:120px;" alt=""/></a>
+		  	<div class="bottom-line-separate-right"></div>
+		  </li>
+		 
+		</ol>
+
+	  <div id="myCarousel" class="carousel slide">
+	  <!-- Carousel items -->
+	  <div class="carousel-inner">
+	    <div class="active item">
+	        <div class="container-fluid">
+			  <div class="row-fluid">
+			    <div class="span4">
+			      <img src="asset/image/carousel/businesswoman.png" style="width: 230px; height: 300px;" alt=""/>
+			    </div>
+			    <div class="span8">
+			      <h2 class="center-text-carousel">Публикувай обява блаблабла</h2>
+			      <input type="button" class="btn btn-primary" id="" value="Публикувай обява" />
+			      <h3 class="center-text-carousel">Ето как става:</h3>
+			      <div class="row-fluid">
+					  <div class="span4">
+						  <p class="center-text-carousel">Опиши обява</p>
+						  <img src="asset/image/carousel/icon3.png" style="width: 100px; height: 100px;" alt=""/>
+					  </div>
+					  <div class="span4">
+						  <p class="center-text-carousel">Договори се с кандидатите</p>
+						  <img src="asset/image/carousel/icon2.png" style="width: 100px; height: 100px;" alt=""/>
+					  </div>
+					  <div class="span4">
+						  <p class="center-text-carousel">Разплати се при свършена работа</p>
+						  <img src="asset/image/carousel/icon1.png" style="width: 100px; height: 100px;" alt=""/>
+					  </div>
+				  </div>
+			      
+			    </div>
+			  </div>
+			</div>
+	    </div>
+	    <div class="item">
+	        2
+	    </div>
+	    <div class="item">
+	        3
+	    </div>
+	    <div class="item">
+	        4
+	    </div>
+	    <div class="item">
+	        5
+	    </div>
+		<div class="item">
+	        6
+	    </div>
+	  </div>
+	  </div>
+   </div>
+    
+  
+  
+    
+  <div id="subtitle_box">
+  	<p id="subtitle"><a data-toggle="modal" href="#inviteFriend">Покани приятел</a> в Rabota за den и получи безплатен VIP код за товята обява!</p>
+  </div>
+  
+     <div class="one_column">
+		<div class="home-grid">
+              <div class="home-box">
+              	<span class="home-box-title">Разхождам домашни любимци</span>
+              	<span class="home-box-address">София<br />27.04.2013</span>
+              	<span class="home-box-price">Цена по договаряне</span>
+	          </div>
+              <div class="home-box home-box2">
+	              <span class="home-box-title">Разхождам домашни любимци</span>
+	              <span class="home-box-address">София<br />27.04.2013</span>
+	              <span class="home-box-price">10 лв.</span>
+              </div>
+              <div class="home-box home-box2">
+	              <span class="home-box-title">Разхождам домашни любимци</span>
+	              <span class="home-box-address">София<br />27.04.2013</span>
+	              <span class="home-box-price">Цена по договаряне</span>
+              </div>
+              <div class="home-box">
+	              <span class="home-box-title">Разхождам домашни любимци</span>
+	              <span class="home-box-address">София<br />27.04.2013</span>
+	              <span class="home-box-price">Цена по договаряне</span>
+              </div>
+              <div class="home-box">
+	              <span class="home-box-title">Разхождам домашни любимци</span>
+	              <span class="home-box-address">София<br />27.04.2013</span>
+	              <span class="home-box-price">Цена по договаряне</span>
+              </div>
+              <div class="home-box home-box2">
+	              <span class="home-box-title">Разхождам домашни любимци</span>
+	              <span class="home-box-address">София<br />27.04.2013</span>
+	              <span class="home-box-price">Цена по договаряне</span>
+              </div>
+        </div>
+		</div> 
+		
+		
+  </div>
+  
+  
+  
+  		<!-- POPUPS -->
+  		<div id="register" class="modal hide fade" tabindex="-1" data-width="300">
+			<h3 class="center-title">Регистрация</h3>
+			  	<input type="text" id="regFieldMail" placeholder="Имейл"/>
+				<br/>
+				<input type="text" id="regFieldName" placeholder="Име (Иван Иванов)"/>
+				<br/>
+				<input type="password" id="regFieldPass" placeholder="Парола"/>
+				<br/>
+				<input type="password" id="regFieldRpass" placeholder="Повтори парола"/>
+				<br/>
+			
+				<div class="control-group">
+								    
+				<div class="controls span2">
+					<label class="checkbox" id="regCheckBox">
+					<input type="checkbox" name="term" value="option1" > Потвърждавам че съм способен да изпълнявам предложените от мен услуги според описаното в условията за ползванe
+					</label>
+				</div>
+				</div>
+				
+				<select id="regSelect">
+				  <option value="select" selected="selected">От къде научи за нас</option>
+				  <option value="fb">Facebook</option>
+				  <option value="twitter">Twitter</option>
+				  <option value="myspace">MySpace</option>
+				  <option value="other">Other</option>
+				</select>
+				<br/>
+				<input type="button" class="btn btn-warning dropdown-toggle" id="btn-pos-bot" value="Регистрирай" />
+				<input type="button" class="btn"  id="right-btn-pos-bot" value="Отмени" />
+				<a><img src="facebook.png" alt="FB"  id="fbBtn" width="45" height="30"></a>
+			
+			</div>
+			
+			<div id="login" class="modal hide fade"  tabindex="-1" data-width="300">
+			  <h3 id="center-title-login">Вход</h3>
+						
+				<input type="text" id="LogInemail" style="width:140px;" placeholder="Имейл"/>
+				<input type="password" id="LogInpass" style="width:140px;" placeholder="Парола"/>
+				<br/>
+				<a data-toggle="modal" href="#forgotPassword">Забравена парола</a>
+				<br/>
+				<input type="button" class="btn-warning pull-left"  id="loginBtn" value="Влезни" />
+			</div>
+			
+			<div id="forgotPassword" class="modal hide fade" tabindex="-1" data-width="300">
+			  
+			<h3 class="center-title">Забравена парола</h3>
+			<p  id="center-cont">Въведете e-mail и ще ти изпратим информация относно възстановяване на достъп до акаунта ти.</p>
+			
+			<input type="text" id="center-field" placeholder="Имейл ..."/>
+			<br/>
+			<input type="button" class="btn btn-warning dropdown-toggle" id="btn-pos" value="Възтанови" />
+			<div id="right-btn-pos"><input type="button" class="btn"  id="close" value="Отмени" /></div>
+			
+			</div>
+			
+			<div id="terms" class="modal hide fade" tabindex="-1" data-width="300">
+			  
+				<h3 class="center-title">Условия за ползване</h3>
+				<p  class="left-cont">Copyright ERICO, Inc. ("ERICO") 1998-2003. All Rights Reserved. Copyright in this document is owned by ERICO.
+
+					Any person is hereby authorized to view, copy, print and distribute this document subject to the following conditions: (i) the document may only be used for non-			commercial purposes and (ii) any copy of this document or portion thereof must include this copyright notice.
+
+					Note that any product, process or technology described in the document may be the subject of other intellectual property rights reserved by ERICO and are not licensed hereunder.</p>
+				<p class="left-cont">Trademarks
+				
+				CADDY, CADDY MAN, CADWELD, CRITEC, ERICO, ERIFLEX, ERITECH, FLEXIBAR, LENTON and/or other ERICO products referenced herein are either registered 	trademarks or trademarks of ERICO International Corporation in the U.S. and/or other countries. The names of actual companies and products mentioned herein may be the trademarks of their respective owners.</p>
+				
+				
+				<input type="button" class="btn btn-position-left" value="Готово" />
+				
+			
+			</div>
+
+<div id="inviteFriend" class="modal hide fade"  tabindex="-1" data-width="300">
+			  
+			<h3 class="center-title">Покани приятели</h3>
+<form>
+
+<div class="control-group">
+	<div class="controls">
+			<div id="chechlistFriends">
+				<ul>
+				<li>
+					<img src="facebook.png" alt="FB"  class="imageFriend" width="45" height="30">
+					<label class="checkbox" >
+					<input type="checkbox" name="checkboxes"  value="Option one">Иван Иванов</label>
+				</li>
+				<li>
+					<img src="facebook.png" alt="FB"  class="imageFriend" width="45" height="30">
+					<label class="checkbox" >
+					<input type="checkbox" name="checkboxes"  value="Option one">Иван Иванов</label>
+				</li>
+				<li>
+					<img src="facebook.png" alt="FB"  class="imageFriend" width="45" height="30">
+					<label class="checkbox" >
+					<input type="checkbox" name="checkboxes"  value="Option one">Иван Иванов</label>
+				</li>
+				<li>
+					<img src="facebook.png" alt="FB"  class="imageFriend" width="45" height="30">
+					<label class="checkbox" >
+					<input type="checkbox" name="checkboxes"  value="Option one">Иван Иванов</label>
+				</li>
+				<li>
+					<img src="facebook.png" alt="FB"  class="imageFriend" width="45" height="30">
+					<label class="checkbox" >
+					<input type="checkbox" name="checkboxes"  value="Option one">Иван Иванов</label>
+				</li>
+				</ul>
+			</div>
+	</div>
+</div>
+
+</form>
+			
+					<br/>
+			<input type="button" class="btn btn-warning dropdown-toggle btn-position-left" value="Изпрати" />
+			<input type="button" class="btn" id="cancel_btn" value="Отмени" />
+		 
+			</div>
+
         <footer>
           <ul class="navigation">
             <li class="active"><a href="about.html">За RabotaZaDen</a></li>
             <li><a href="faq.html">Често Задвани Въпроси</a></li>
-            <li><a href="terms.html">Потребителско Споразумение</a></li>
+            <li><a data-toggle="modal" href="#terms">Потребителско Споразумение</a></li>
             <li><a href="ad.html">Рекламирай в RabotaZaDen</a></li>
             <li><a href="contact.html">Контакт</a></li>
           </ul>
         </footer>
-  
-      </div>
+        
         <script src="http://code.jquery.com/jquery.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
-    </body>
+        
+        <script>
+        // invoke the carousel
+$('#myCarousel').carousel({
+  interval: 3000
+});
+
+$('.carousel-linked-nav > li > a').click(function() {
+    var item = Number($(this).attr('href').substring(1));
+    $('#myCarousel').carousel(item - 1);
+    $('.carousel-linked-nav .active').removeClass('active');
+    $(this).parent().addClass('active');
+    return false;
+});
+$('#myCarousel').bind('slid', function() {
+    $('.carousel-linked-nav .active').removeClass('active');
+    var idx = $('#myCarousel .item.active').index();
+    $('.carousel-linked-nav li:eq(' + idx + ')').addClass('active');
+
+});
+        </script>
+        
+</body>
 </html>
