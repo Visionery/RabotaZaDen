@@ -425,12 +425,12 @@ body {
 }
 .center-title{
 	text-align: center;
-	font-size: 14px;
+	font-size: 20px;
 	font-weight: bold;
 }
 #center-title2{
 	text-align: center;
-	font-size: 14px;
+	font-size: 20px;
 	font-weight: bold;
 	margin-top: 20px;
 	margin-left: 30px;
@@ -558,6 +558,8 @@ body {
 	width: 980px;
 	background-color: #fff;
 	border: 1px solid #EDEDED;
+	position: relative;
+	z-index: 1;
 }
 #subtitle{
 	margin-left: 100px;
@@ -586,15 +588,13 @@ body {
 	animation: slider-item 2s;
 	-webkit-animation: slider-item 2s; 
     opacity:1;
-    border: 1px solid #000;
-    height: 365px;
+    height: 550px;
 }
 @keyframes slider-item
 {
 	from {opacity:0;}
 	to {opacity:1;}
 }
-
 @-webkit-keyframes slider-item
 {
 	from {opacity:0;}
@@ -623,7 +623,6 @@ body {
    
 }
 .right-1, .right-2, .right-3 {
-
    margin-left: 447px;
    position: absolute;
    top:102px;
@@ -643,7 +642,7 @@ body {
 	width: 978px;
 	height: 365px;
 	margin-bottom: 20px;
-	border: 1px solid #EDEDED;
+	border-top: 7px solid #3399cc;
 }
 .bottom-line-separate-right{
 	position: relative;
@@ -660,6 +659,71 @@ body {
 	background-color: #3399CC;
 }
 
-.center-text-carousel{
+.left-text-carousel{
 	text-align: left;
+}
+.center-text-carousel{
+	text-align: center;
+}
+.one-line-content{
+	margin-top: 8px;
+}
+.publish-ad-btn{
+	margin-left: 110px;
+	width: 300px;
+	padding-left: 50px;
+	padding-right: 50px;
+	border-radius: 5px;
+	font-size: 18px;
+	height: 40px;
+	border: none;
+	background-color: #3399CC;
+	color: white;
+}
+.publish-ad-btn-right {
+	margin-left: 110px;
+	width: 300px;
+	padding-left: 50px;
+	padding-right: 50px;
+	border-radius: 5px;
+	font-size: 18px;
+	height: 40px;
+	border: none;
+	background-color: #99CC33;
+	color: white;
+}
+.row-fluid{
+	margin-top: 30px;
+}
+.popover {
+	position: relative;
+	z-index: 999;
+	max-width: 150px;
+	font-size: 14px;
+	text-align: center;
+}
+.btn-nova-obqva {
+	width: 100%;
+	background-color: #3399cc;
+	padding-top:5px;
+	padding-bottom: 5px;
+	color: #fff;
+	border-radius: 4px;
+}
+.btn-nova-obqva:hover {
+	color: #fff;
+}
+.btn-nova-reklama {
+	background-color: #99cc33;
+	width: 100%;
+	padding-top:5px;
+	padding-bottom: 5px;
+	color: #fff;
+	border-radius: 4px;
+}
+.btn-nova-reklama:hover {
+	color: #fff;
+}
+.btn-picture {
+	top: -10px;
 }

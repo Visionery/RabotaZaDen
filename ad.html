@@ -82,12 +82,88 @@
             <p>In tristique lectus ut dolor rhoncus, lobortis viverra felis fringilla. In varius, turpis nec fringilla laoreet, ligula tellus sollicitudin odio, a rutrum odio mauris laoreet tellus. Vivamus a erat vel dolor dignissim ornare. Mauris eu urna ac eros fermentum iaculis. Sed rutrum malesuada dolor ut pharetra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi lacus ante, ullamcorper in felis dictum, rhoncus laoreet orci. Quisque blandit libero auctor nisi laoreet porta. Maecenas volutpat tortor justo, in elementum purus ultrices ut. Nunc et porta augue. Duis consectetur mi ligula, a luctus odio volutpat a. Curabitur pretium, ligula gravida commodo egestas, tortor urna egestas arcu, facilisis pretium tellus tellus vel elit.</p>
             <p>Ако имаш запитване към нас, пиши ни на <a href="mailto:info@rabotazaden.bg">info@rabotazaden.bg</a></p>
         </div>
-  
+		
+		
+		
+		<div id="register" class="modal hide fade" tabindex="-1" data-width="300">
+			<h3 class="center-title">Регистрация</h3>
+			  	<input type="text" id="regFieldMail" placeholder="Имейл"/>
+				<br/>
+				<input type="text" id="regFieldName" placeholder="Име (Иван Иванов)"/>
+				<br/>
+				<input type="password" id="regFieldPass" placeholder="Парола"/>
+				<br/>
+				<input type="password" id="regFieldRpass" placeholder="Повтори парола"/>
+				<br/>
+			
+				<div class="control-group">
+								    
+				<div class="controls span2">
+					<label class="checkbox" id="regCheckBox">
+					<input type="checkbox" name="term" value="option1" > Потвърждавам че съм способен да изпълнявам предложените от мен услуги според описаното в условията за ползванe
+					</label>
+				</div>
+				</div>
+				
+				<select id="regSelect">
+				  <option value="select" selected="selected">От къде научи за нас</option>
+				  <option value="fb">Facebook</option>
+				  <option value="twitter">Twitter</option>
+				  <option value="myspace">MySpace</option>
+				  <option value="other">Other</option>
+				</select>
+				<br/>
+				<input type="button" class="btn btn-warning dropdown-toggle" id="btn-pos-bot" value="Регистрирай" />
+				<input type="button" class="btn"  id="right-btn-pos-bot" value="Отмени" />
+				<a><img src="facebook.png" alt="FB"  id="fbBtn" width="45" height="30"></a>
+			
+			</div>
+			
+			<div id="login" class="modal hide fade"  tabindex="-1" data-width="300">
+			  <h3 id="center-title-login">Вход</h3>
+						
+				<input type="text" id="LogInemail" style="width:140px;" placeholder="Имейл"/>
+				<input type="password" id="LogInpass" style="width:140px;" placeholder="Парола"/>
+				<br/>
+				<a data-toggle="modal" href="#forgotPassword">Забравена парола</a>
+				<br/>
+				<input type="button" class="btn-warning pull-left"  id="loginBtn" value="Влезни" />
+			</div>
+			
+			<div id="forgotPassword" class="modal hide fade" tabindex="-1" data-width="300">
+			  
+			<h3 class="center-title">Забравена парола</h3>
+			<p  id="center-cont">Въведете e-mail и ще ти изпратим информация относно възстановяване на достъп до акаунта ти.</p>
+			
+			<input type="text" id="center-field" placeholder="Имейл ..."/>
+			<br/>
+			<input type="button" class="btn btn-warning dropdown-toggle" id="btn-pos" value="Възтанови" />
+			<div id="right-btn-pos"><input type="button" class="btn"  id="close" value="Отмени" /></div>
+			
+			</div>
+		<div id="terms" class="modal hide fade" tabindex="-1" data-width="300">
+			  
+				<h3 class="center-title">Условия за ползване</h3>
+				<p  class="left-cont">Copyright ERICO, Inc. ("ERICO") 1998-2003. All Rights Reserved. Copyright in this document is owned by ERICO.
+
+					Any person is hereby authorized to view, copy, print and distribute this document subject to the following conditions: (i) the document may only be used for non-			commercial purposes and (ii) any copy of this document or portion thereof must include this copyright notice.
+
+					Note that any product, process or technology described in the document may be the subject of other intellectual property rights reserved by ERICO and are not licensed hereunder.</p>
+				<p class="left-cont">Trademarks
+				
+				CADDY, CADDY MAN, CADWELD, CRITEC, ERICO, ERIFLEX, ERITECH, FLEXIBAR, LENTON and/or other ERICO products referenced herein are either registered 	trademarks or trademarks of ERICO International Corporation in the U.S. and/or other countries. The names of actual companies and products mentioned herein may be the trademarks of their respective owners.</p>
+				
+				
+				<input type="button" class="btn btn-position-left" value="Готово" />
+				
+			
+			</div>
+		
         <footer>
           <ul class="navigation">
             <li><a href="about.html">За RabotaZaDen</a></li>
             <li><a href="faq.html">Често Задвани Въпроси</a></li>
-            <li><a href="terms.html">Потребителско Споразумение</a></li>
+            <li><a data-toggle="modal" href="#terms">Потребителско Споразумение</a></li>
             <li class="active"><a href="ad.html">Рекламирай в RabotaZaDen</a></li>
             <li><a href="contact.html">Контакт</a></li>
           </ul>

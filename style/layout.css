@@ -1,13 +1,9 @@
 /* main */
 
 header {
-    border-bottom: 7px solid #3399cc;
     height: 74px;
     padding: 10px 0;
-    /*
-z-index: 99;
-    position: relative;
-*/
+    border-bottom: 2px solid grey;
 }
 
 .header_buttons {
@@ -24,7 +20,7 @@ footer {
     padding: 3px;
     font-size: 14px;
     clear: both;
-    width: 980px;
+    width: 974px;
 	margin: auto !important;
 }
 
